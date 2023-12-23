@@ -1,0 +1,188 @@
+ body {
+      padding-top: 50px; /* Adjust body padding to accommodate fixed navbar */
+    }
+
+ 
+    .navbar {
+      background-color: #e5632a;
+    }
+
+    .navbar img{
+      width: 30%;
+    }
+
+    .navbar-brand {
+      color: #fff;
+      font-size: 24px;
+      transition: transform 0.3s ease-in-out; /* Menambahkan efek transisi untuk transform */
+    }
+
+    .navbar-nav {
+      margin-left: auto;
+    }
+
+    .nav-item {
+      margin-right: 20px;
+    }
+
+    .nav-link {
+      color: #fff;
+      font-size: 18px;
+      position: relative;
+    }
+
+    .nav-link.active {
+      color: #fff;
+    }
+
+    .nav-link.active::after {
+      content: '';
+      display: block;
+      height: 3px;
+      width: 100%;
+      color: #fff;
+
+      background-color: #fff;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+
+    .parallax-container {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #fff;
+    }
+
+    .parallax-container img {
+      width: 150px; /* Sesuaikan lebar logo sesuai kebutuhan */
+      margin-bottom: 20px;
+      transition: transform 0.3s ease-in-out; /* Menambahkan efek transisi untuk transform */
+    }
+
+.home {
+    height: 60vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden; /* Untuk memastikan gambar tidak keluar dari elemen */
+    clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%, 0 100%); /* Polygon clip path */
+    display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden; /* Untuk memastikan gambar tidak keluar dari elemen */
+      text-align: center; /* Untuk memusatkan teks secara horizontal */
+      font-family: 'Segoe UI', sans-serif;
+
+  }
+
+
+
+  .home img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Untuk memastikan gambar memenuhi elemen dan mempertahankan aspek rasio */
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)); /* Warna overlay gelap */
+    box-shadow: inset 0 0 50px 20px rgba(0, 0, 0, 0.2); /* Efek vignette */
+  }
+
+
+  .txt {
+    z-index: 1; /* Untuk menempatkan teks di atas gambar */
+    color: white; /* Warna teks */
+  }
+
+
+  .txt .judul{
+    font-size: 5em
+  }
+  
+  .txt .subjudul{
+    margin-top:-20px;
+    top: -10px;
+    font-size: 1.7em
+  }
+
+  .data-card {
+    margin-bottom: 20px;
+    border-radius: 5%;
+
+  }
+
+  .data-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5%;
+
+    margin-bottom: 10px;
+  }
+
+  .pagination-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .pagination-container {
+    margin-top: 20px; /* Atur sesuai kebutuhan Anda */
+  }
+  
+  .pagination {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    font-weight: 600;
+  }
+  
+  .pagination .page-item {
+    margin-right: 5px;
+  }
+  
+  .pagination .page-link {
+    text-decoration: none;
+    color: #333;
+    border: 0 solid #ddd;
+    border-radius: 0;
+    padding: 5px 10px;
+  }
+  
+  .pagination .page-item.active .page-link {
+    background-color: #E56717; /* Warna latar belakang ketika halaman aktif dipilih */
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    color: #fff;
+  }
+  
+  .pagination .page-link:hover {
+    background-color: #E56717;
+    border: 1px solid #ddd;
+    padding: 5px 10px;
+    border-radius: 3px;
+  }
+
+  .card-title {
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* Jumlah baris yang diinginkan */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-top: -20px;
+  }
+  
+  
+  
